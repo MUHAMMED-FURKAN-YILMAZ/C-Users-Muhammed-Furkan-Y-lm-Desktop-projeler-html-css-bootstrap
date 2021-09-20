@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kayıt Formu</title>
+    <style>
+      table {
+        background-color: white;
+        width: 65%;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="server/kayit.js" method="post">
+      <table>
+        <tbody>
+          <tr>
+            <td><label for="Ad">Adı</label></td>
+            <td><input type="text" id="Ad" name="ad" value="" /></td>
+            <td rowspan="7"></td>
+            <td rowspan="2" style="padding-bottom: 40px">
+              <label for="Hobiler">Hobiler</label>
+            </td>
+            <td rowspan="2">
+              <input type="checkbox" name="futbol" id="Futbol" />
+              <label for="Futbol">Futbol</label> <br />
+              <input type="checkbox" name="Voleybol" id="Voleybol" />
+              <label for="Voleybol">Voleybol</label> <br />
+              <input type="checkbox" name="Basketbol" id="Basketbol" />
+              <label for="Basketbol">Basketbol</label>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="Soyad">Soyad</label></td>
+            <td><input type="text" id="Soyad" name="Soyad" value="" /></td>
+          </tr>
+
+          <tr>
+            <td><label for="Cinsiyet">Cinsiyet</label></td>
+            <td>
+              <input type="radio" id="Bay" name="Cinsiyet" value="1" />
+              <label for="Bay">Bay &emsp;&nbsp;&nbsp;</label>
+              <input type="radio" id="Bayan" name="Cinsiyet" value="2" />
+              <label for="Bayan">Bayan</label>
+            </td>
+            <td><label for="Pp">Profil Fotoğrafı</label></td>
+            <td>
+              <input type="file" accept="image/png" name="Pp" id="Pp" />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="il">İl</label></td>
+            <td>
+              <select name="il" style="min-width: 187px">
+                <option value="1">Adana</option>
+                <option value="26">Eskişehir</option>
+                <option value="34">İstanbul</option>
+                <option value="23">Elazığ</option>
+              </select>
+            </td>
+            <td><label for="Dt">Doğum Tarihi</label></td>
+            <td><input type="date" name="Dt" id="Dt" /></td>
+          </tr>
+          <tr>
+            <td><label for="Eposta">Eposta</label></td>
+            <td><input type="text" id="Eposta" name="Eposta" value="" /></td>
+            <td rowspan="3" style="padding-bottom: 70px">
+              <label for="Adres">Adres</label>
+            </td>
+            <td rowspan="2">
+              <textarea name="Adres" id="Adres" cols="20" rows="3"></textarea>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="Kisisel Site">Kişisel Site</label></td>
+            <td>
+              <input
+                type="text"
+                id="Kisisel Site"
+                name="Kisisel Site"
+                value=""
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="Tel">Telefon</label></td>
+            <td>
+              <input type="number" id="Tel" name="Tel" value="" />
+            </td>
+            <td>
+              <input
+                type="Submit"
+                value="Kayıt Ol"
+                style="
+                  background-color: rgb(202, 195, 195);
+                  height: 30px;
+                  width: 100px;
+                "
+              />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </form>
+  </body>
+</html>

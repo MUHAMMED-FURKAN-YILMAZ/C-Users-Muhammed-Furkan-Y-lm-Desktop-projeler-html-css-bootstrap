@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eposta Formu</title>
+    <style>
+      table {
+        font-size: 24px;
+        margin: 0 auto;
+        vertical-align: middle;
+      }
+      tr {
+        width: 80px;
+        height: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="server/kayit.js" method="post">
+      <table>
+        <tbody>
+          <tr>
+            <td><label for="eposta">Eposta</label></td>
+            <td>
+              <input
+                type="text"
+                name="eposta"
+                id="eposta"
+                value=""
+                placeholder="Eposta"
+              />
+            </td>
+          </tr>
+
+          <tr>
+            <td><label for="Sifre">Şifre</label></td>
+            <td>
+              <input
+                type="password"
+                name="Sifre"
+                id="Sifre"
+                value=""
+                placeholder="Sifre"
+              />
+            </td>
+          </tr>
+
+          <tr>
+            <td><label for="Guvenlik Kodu">Güvenlik Kodu</label></td>
+            <td>
+              <input
+                type="text"
+                name="Guvenlik Kodu"
+                id="Guvenlik Kodu"
+                value=""
+                placeholder="Güvenlik Kodu"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+
+            <td>
+              <input
+                type="submit"
+                value="Kaydet"
+                style="background-color: rgb(224, 219, 219); font-size: 18px"
+              />
+              <input
+                type="reset"
+                value="Temizle"
+                style="background-color: rgb(224, 219, 219); font-size: 18px"
+              />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </form>
+  </body>
+</html>
