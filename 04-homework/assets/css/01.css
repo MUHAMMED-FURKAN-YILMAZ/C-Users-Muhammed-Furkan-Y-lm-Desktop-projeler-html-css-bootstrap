@@ -1,0 +1,48 @@
+th,
+td {
+  width: 100px;
+  line-height: 1.5em;
+}
+
+.genis {
+  width: 200px;
+  text-align: left;
+}
+
+.ortala {
+  text-align: center;
+  width: 50px;
+}
+
+.sag {
+  text-align: right;
+}
+
+.head {
+  background-color: rgb(48, 48, 48);
+  color: white;
+}
+
+.foot {
+  background-color: rgb(48, 48, 48);
+  color: white;
+  text-align: right;
+}
+
+.koyu {
+  background-color: gray;
+}
+
+.b {
+  color: white;
+  margin-top: 10px;
+  margin-right: 0px;
+
+  border: none;
+  padding: 0.5em;
+  width: 170px;
+  background-color: chocolate;
+}
+.son {
+  padding-left: 0.5em;
+}
