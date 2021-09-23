@@ -1,0 +1,13 @@
+div.arkaplan {
+  width: 70%;
+  height: 300px;
+  background-image: url(../img/mayur-gala-2PODhmrvLik-unsplash.jpg);
+  background-size: cover;
+  background-position: center center;
+  border: 1px solid red;
+}
+.yazi {
+  text-align: center;
+  color: red;
+  border: 1px solid chartreuse;
+}
